@@ -8,7 +8,6 @@
  *  
  *  RF device: CC1101 en 2-FSK pour lecture détecteur VERISURE 
  * Ce sniffer fonctionne également si la centrale est hors service
- * ToDo : ajouter le calcul du CRC
  ***************************************************************/
 #include <ELECHOUSE_CC1101_SRC_DRV.h>
 
@@ -68,7 +67,7 @@ int calcRssi(int);
 #define   RX_OVERFLOW       0x80            //bit d'overflow
 
 #ifdef ESP32
-int pin = 17;        //pin 4 pour ESP32 (éviter pin 2 car doit être à zéro lors du bootloader), 17 pour WEMOS D1 MINI ESP32 sur ILI 9341
+int pin = 4;        //pin 4 pour ESP32 (éviter pin 2 car doit être à zéro lors du bootloader), 17 pour WEMOS D1 MINI ESP32 sur ILI 9341
 #elif ESP8266
 int pin = 4;  // for esp8266! Receiver on pin 4 = D2.
 #else
@@ -330,3 +329,4 @@ int calcRssi(int rssi)
 	return rssi;
 }
 //***************************************************************
+
