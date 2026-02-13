@@ -13,4 +13,4 @@ The data is displayed on the Serial Monitor output of the Arduino IDE (speed 115
 
 <img width="503" height="170" alt="Capture d’écran du 2026-02-13 09-33-25" src="https://github.com/user-attachments/assets/fd18f8c1-5fbb-48d3-aa2c-57b763b0c7d6" />
 
-The decoding of the frames is explained (in french) in the PDF document attached to this repository.
+The decoding of the frames is explained (in french) in the PDF document attached to this repository (VERISURE PACKET SNIFFER.pdf)
